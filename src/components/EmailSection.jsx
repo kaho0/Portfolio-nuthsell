@@ -3,7 +3,7 @@ import { useState } from "react";
 import GithubIcon from "../../public/github-icon.svg";
 import LinkedinIcon from "../../public/linkedin-icon.svg";
 import { Link } from "react-router-dom";
-import { Axios } from "axios";
+import axios from "axios";
 
 const EmailSection = () => {
     const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -15,7 +15,7 @@ const EmailSection = () => {
             subject: e.target.subject.value,
             message: e.target.message.value,
         };
-        Axios.post('', data).then(res => {
+        axios.post('http://localhost:3001/sendemail', data).then(res => {
 
             console.log(res.data);
             setEmailSubmitted(true)
