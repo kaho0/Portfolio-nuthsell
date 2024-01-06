@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import AboutSection from '../components/AboutSection'
+import ProjectsSection from '../components/ProjectSection'
 const Main = () => {
   return (
     <div>
@@ -9,6 +10,7 @@ const Main = () => {
         <Outlet />
       </div>
      <AboutSection></AboutSection>
+<ProjectsSection></ProjectsSection>
     </div>
   )
 }
