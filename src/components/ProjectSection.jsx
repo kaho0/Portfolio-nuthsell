@@ -6,7 +6,7 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
+    title: "TagTalk",
     description: "Project 1 description",
     image: "https://i.ibb.co/mbqsFSs/tagtalk.png",
     tag: ["All", "Web"],
@@ -15,18 +15,18 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
+    title: "YouVid-A youtube clone",
     description: "Project 2 description",
-    image: "/images/projects/2.png",
+    image: "https://i.ibb.co/sQ80mn8/youvid.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
+    title: "Flavour Fusion",
     description: "Project 3 description",
-    image: "/images/projects/3.png",
+    image: "https://i.ibb.co/wYcFwCj/b.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
@@ -51,7 +51,7 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
+    title: "ChatVid-A Video Chatting App",
     description: "Project 5 description",
     image: "https://i.ibb.co/K5jMmzS/c2.png",
     tag: ["All", "Web"],
@@ -72,7 +72,7 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects ">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+      <h2 className="text-center text-4xl font-bold text-white mt-8 mb-8 md:mb-12">
         My Projects
       </h2>
 

@@ -20,14 +20,13 @@ const HeroSection = () => {
             <br></br>
             <TypeAnimation
               sequence={[
-                "Judy",
+                "Chisty",
                 1000,
-                "Web Developer",
+                "Software Developer",
                 1000,
-                "Mobile Developer",
+                "ReactJs Developer",
                 1000,
-                "UI/UX Designer",
-                1000,
+               
               ]}
               wrapper="span"
               speed={50}
@@ -35,8 +34,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptuous.
+            Aspiring software developer fluent in web technologies, dedicated to crafting seamless digital solutions.
           </p>
           <div>
             <Link
@@ -46,11 +44,11 @@ const HeroSection = () => {
               Hire Me
             </Link>
             <Link
-              href="/"
+              to="https://drive.google.com/file/d/1RkP07Zi520krVTGTdX6RFWZDso6-n6pO/view"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-puple-500 to-pink-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-6 py-3 border border-white">
-                Download CV
+                Download Resume
               </span>
             </Link>
           </div>

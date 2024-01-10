@@ -7,16 +7,16 @@ import { Link } from "react-router-dom";
 
 const navLinks = [
   {
-    title: "About",
-    path: "#about",
+    title: "LinkedIn",
+    path: "https://www.linkedin.com/in/mynuddin-chisty17",
   },
   {
-    title: "Projects",
-    path: "#projects",
+    title: "Github",
+    path: "https://github.com/chistym17",
   },
   {
-    title: "Contact",
-    path: "#contact",
+    title: "Leetcode",
+    path: "https://leetcode.com/chistym17",
   },
 ];
 
