@@ -38,7 +38,10 @@ const EmailSection = () => {
                     {" "}
                     I&apos;m currently looking for new opportunities, my inbox is always
                     open. Whether you have a question or just want to say hi, I&apos;ll
-                    try my best to get back to you!
+                    try my best to get back to you! <br></br>
+                    <br />
+                    <span className="text-2xl font-semibold text-white">                    My Email-chistym17@gmail.com
+                    </span>
                 </p>
                 <div className="socials flex flex-row gap-2">
                     <Link href="github.com">
@@ -69,7 +72,7 @@ const EmailSection = () => {
                                 id="email"
                                 required
                                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                                placeholder="jacob@google.com"
+                                placeholder="YourEmail@gmail.com"
                             />
                         </div>
                         <div className="mb-6">
