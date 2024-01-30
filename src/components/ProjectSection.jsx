@@ -29,7 +29,7 @@ const projectsData = [
     image: "https://i.ibb.co/K9VGcMc/fl.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/chistym17/Restuarant-management-project",
-    previewUrl: "/",
+    previewUrl: "https://restaurant-management-e7db6.firebaseapp.com",
   },
 
   {
@@ -58,7 +58,7 @@ const projectsData = [
     image: "https://i.ibb.co/TrdwQ3D/port.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/chistym17/My-Portfolio",
-    previewUrl: "/",
+    previewUrl: "https://my-portfolio-b9aa1.web.app",
   },
 ];
 
