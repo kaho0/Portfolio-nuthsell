@@ -26,6 +26,43 @@ const TAB_DATA = [
       </ul>
     ),
   },
+
+  {
+    title: "Data Structures",
+    id: "data-structures",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>Arrays</li>
+        <li>Linked Lists</li>
+        <li>Stacks</li>
+        <li>Queues</li>
+        <li>Trees</li>
+        <li>Graphs</li>
+        <li>Hash Tables</li>
+        <li>Heaps</li>
+      </ul>
+    ),
+  },
+
+{
+    title: "Algorithms",
+    id: "algorithms",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>Searching Algorithms (Linear Search, Binary Search)</li>
+        <li>Sorting Algorithms (Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort)</li>
+        <li>Graph Algorithms (Breadth-First Search, Depth-First Search, Dijkstra's Algorithm, Bellman-Ford Algorithm, Kruskal's Algorithm, Prim's Algorithm)</li>
+        <li>Dynamic Programming</li>
+        <li>Greedy Algorithms</li>
+        <li>Divide and Conquer</li>
+        <li>Backtracking</li>
+      </ul>
+    ),
+  },
+
+
+
+
   {
     title: "Certifications",
     id: "certifications",
@@ -74,6 +111,7 @@ const AboutSection = () => {
               {" "}
               Education{" "}
             </TabButton>
+
             <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
@@ -81,6 +119,24 @@ const AboutSection = () => {
               {" "}
               Certifications{" "}
             </TabButton>
+
+            <TabButton
+              selectTab={() => handleTabChange("data-structures")}
+              active={tab === "data-structures"}
+            >
+              {" "}
+              Data Structures{" "}
+            </TabButton>
+
+            <TabButton
+              selectTab={() => handleTabChange("algorithms")}
+              active={tab === "algorithms"}
+            >
+              {" "}
+              Algorithms{" "}
+            </TabButton>
+
+
           </div>
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}

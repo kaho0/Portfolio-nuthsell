@@ -15,7 +15,7 @@ const EmailSection = () => {
             subject: e.target.subject.value,
             message: e.target.message.value,
         };
-        axios.post('http://localhost:3001/sendemail', data).then(res => {
+        axios.post('https://portfolio-web-ji8e.onrender.com/sendemail', data).then(res => {
 
             console.log(res.data);
             setEmailSubmitted(true)
