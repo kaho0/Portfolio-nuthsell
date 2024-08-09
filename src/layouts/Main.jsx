@@ -1,23 +1,24 @@
 import { Outlet } from 'react-router-dom'
-import Navbar from '../components/Navbar'
 import AboutSection from '../components/AboutSection'
 import ProjectsSection from '../components/ProjectSection'
 import EmailSection from '../components/EmailSection'
 import Footer from "../components/Footer"
 import Skills from '../components/SkillsSection/Skills'
+import SkillsSection from '../components/SkillsSection/skillsdiv'
 const Main = () => {
   return (
-    <div>
-      <Navbar></Navbar>
-      <div className='pt-24 min-h-[calc(100vh-68px)]'>
+    <div className='px-16  '>
+      {/* <Navbar></Navbar> */}
+      <div className='pt-5 pb-5 mb-10'>
         <Outlet />
       </div>
-     <AboutSection></AboutSection>
-<Skills></Skills>
+      <AboutSection></AboutSection>
+      <SkillsSection></SkillsSection>
+      <Skills></Skills>
 
-<ProjectsSection></ProjectsSection>
-<EmailSection></EmailSection>
-<Footer></Footer>
+      <ProjectsSection></ProjectsSection>
+      <EmailSection></EmailSection>
+      <Footer></Footer>
     </div>
   )
 }
