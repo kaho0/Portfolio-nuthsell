@@ -5,6 +5,7 @@ import EmailSection from '../components/EmailSection'
 import Footer from "../components/Footer"
 import Skills from '../components/SkillsSection/Skills'
 import SkillsSection from '../components/SkillsSection/skillsdiv'
+import MyPortfolio from '../components/Projects/projectsnew'
 const Main = () => {
   return (
     <div className='px-16  '>
@@ -15,8 +16,8 @@ const Main = () => {
       <AboutSection></AboutSection>
       <SkillsSection></SkillsSection>
       <Skills></Skills>
-
-      <ProjectsSection></ProjectsSection>
+      <MyPortfolio></MyPortfolio>
+      {/* <ProjectsSection></ProjectsSection> */}
       <EmailSection></EmailSection>
       <Footer></Footer>
     </div>
