@@ -1,35 +1,34 @@
-
 const ProjectSection = ({ name, type, techStack, description, githubLink, liveLink, images }) => {
     return (
         <div className="flex flex-col md:flex-row bg-white p-6 mb-6 rounded-lg shadow-lg">
             {/* Left Side: Project Description */}
             <div className="w-full md:w-1/2 mb-4 md:mb-0">
                 {/* Project Name and Links */}
-                <div className="flex justify-between items-center mb-4">
-                    <h2 className="text-2xl font-bold text-gray-800">{name}</h2>
-
+                <div className="flex justify-between items-center mb-6">
+                    <h2 className="text-3xl font-bold text-[#EDA751]">{name}</h2>
                 </div>
 
                 {/* Project Type */}
-                <p className="text-gray-600 italic mb-2">{type}</p>
+                <p className="text-gray-600 italic mb-4">{type}</p>
 
                 {/* Tech Stack */}
-                <p className="text-gray-800 font-semibold mb-4">
+                <p className="text-gray-800 font-semibold mb-6">
                     Technology Used: {techStack}
                 </p>
 
                 {/* Project Description with Bullet Points */}
-                <ul className="list-disc list-inside text-gray-600 space-y-2">
+                <ul className="list-disc list-inside text-gray-700 space-y-3">
                     {description.map((line, index) => (
                         <li key={index}>{line}</li>
                     ))}
                 </ul>
-                <div className="flex space-x-4">
+
+                <div className="flex space-x-6 mt-10">
                     <a
                         href={githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-500 hover:underline"
+                        className="text-white bg-[#EDA751] px-6 py-2 rounded-md shadow-md font-medium transition duration-200"
                     >
                         GitHub
                     </a>
@@ -37,24 +36,42 @@ const ProjectSection = ({ name, type, techStack, description, githubLink, liveLi
                         href={liveLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-500 hover:underline"
+                        className="text-white bg-[#EDA751] px-6 py-2 rounded-md shadow-md font-medium transition duration-200"
                     >
                         Live
                     </a>
                 </div>
             </div>
 
-            {/* Right Side: Project Images */}
-            <div className="w-full md:w-1/2 flex flex-wrap justify-center">
-                {images.map((image, index) => (
-                    <div key={index} className="w-1/2 p-2">
+
+            {/* Right Side: Photo Collage */}
+            <div className="w-full md:w-1/2 flex flex-col justify-between">
+                <div className="flex space-x-2 mb-2">
+                    <div className="w-1/2 p-1">
                         <img
-                            src={image}
-                            alt={`Project Image ${index + 1}`}
-                            className="rounded-lg object-cover w-full h-full"
+                            src={images[0]}
+                            alt={`Project Image 1`}
+                            className="rounded-lg object-cover w-full h-full border-4"
+                            style={{ borderColor: '#EDA751' }}
                         />
                     </div>
-                ))}
+                    <div className="w-1/2 p-1">
+                        <img
+                            src={images[1]}
+                            alt={`Project Image 2`}
+                            className="rounded-lg object-cover w-full h-full border-4 "
+                            style={{ borderColor: '#EDA751' }}
+                        />
+                    </div>
+                </div>
+                <div className="w-full p-1">
+                    <img
+                        src={images[2]}
+                        alt={`Project Image 3`}
+                        className="rounded-lg object-cover w-full h-full border-4"
+                        style={{ borderColor: '#EDA751' }}
+                    />
+                </div>
             </div>
 
         </div>

@@ -1,5 +1,4 @@
-
-import  {  useRef } from "react";
+import { useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import { motion, useInView } from "framer-motion";
 
@@ -20,7 +19,7 @@ const projectsData = [
     image: "https://i.ibb.co/sQ80mn8/youvid.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/chistym17/YouVid",
-    previewUrl:"https://polite-semifreddo-b98601.netlify.app",
+    previewUrl: "https://polite-semifreddo-b98601.netlify.app",
   },
   {
     id: 3,
@@ -66,40 +65,39 @@ const ProjectsSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
     animate: { y: 0, opacity: 1 },
   };
 
   return (
-    <section id="projects " className="bg-white">
-      <h2 className="text-center text-4xl font-bold text-white mt-8 mb-8 md:mb-12">
-        My Projects
-      </h2>
-
-     
-
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12 px-10 ">
-        {projectsData.map((project, index) => (
-          <motion.li
-            key={index}
-            variants={cardVariants}
-            initial="initial"
-            animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
-          >
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              imgUrl={project.image}
-              gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
-            />
-          </motion.li>
-        ))}
-      </ul>
+    <section id="projects" className="bg-white rounded-2xl py-12">
+      <div className="container mx-auto px-8">
+        <h2 className="text-3xl font-bold text-center text-[#EDA751] mb-6">
+          Projects
+        </h2>
+        <ul ref={ref} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projectsData.map((project, index) => (
+            <motion.li
+              key={index}
+              variants={cardVariants}
+              initial="initial"
+              animate={isInView ? "animate" : "initial"}
+              transition={{ duration: 0.3, delay: index * 0.3 }}
+              className="bg-white rounded-lg custom-shadow overflow-hidden border border-gray-200"
+            >
+              <ProjectCard
+                key={project.id}
+                title={project.title}
+                description={project.description}
+                imgUrl={project.image}
+                gitUrl={project.gitUrl}
+                previewUrl={project.previewUrl}
+              />
+            </motion.li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 };

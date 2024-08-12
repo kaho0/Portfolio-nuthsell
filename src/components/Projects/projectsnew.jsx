@@ -13,8 +13,9 @@ const MyPortfolio = () => {
     githubLink: 'https://github.com/your-repo',
     liveLink: 'https://your-live-site.com',
     images: [
-      '/path/to/image1.jpg',
-      '/path/to/image2.jpg'
+      '../../../public/images/pay1.png',
+      '../../../public/images/pay2.png',
+      '../../../public/images/pay3.png'
     ]
   };
 

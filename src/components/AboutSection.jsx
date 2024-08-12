@@ -6,14 +6,14 @@ const AboutSection = () => {
     <section className="bg-white rounded-2xl h-auto mt-[50px] px-16" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-2 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <img
-          src="/images/1301_generated.jpg"
+          src="../../public/images/vecteezy_code-hacker-vector-icon-design_21261938.jpg"
           width={320}
           height={300}
           alt="Mynuddin Chisty"
-          className="rounded-lg shadow-lg"
+          className="rounded-lg "
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-[#EDA751] mb-4">About Me</h2>
           <p className="text-base lg:text-lg mb-4">
             Hello! I'm Mynuddin Chisty, a student with a focus on web technologies and aspiring to be a software developer.
           </p>

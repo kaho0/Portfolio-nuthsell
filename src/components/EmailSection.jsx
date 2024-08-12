@@ -1,9 +1,8 @@
 
 import { useState } from "react";
-import GithubIcon from "../../public/github-icon.svg";
-import LinkedinIcon from "../../public/linkedin-icon.svg";
-import { Link } from "react-router-dom";
 import axios from "axios";
+import { FaLinkedin, FaGithub, FaTwitter, FaReddit } from 'react-icons/fa';
+import { SiLeetcode } from 'react-icons/si';
 
 const EmailSection = () => {
     const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -27,29 +26,63 @@ const EmailSection = () => {
     return (
         <section
             id="contact"
-            className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative px-10"
+            className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative px-10 bg-white rounded-2xl"
         >
             <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
-            <div className="z-10">
-                <h5 className="text-xl font-bold text-white my-2">
+            <div className="z-10 space-y-3">
+                <h5 className="text-2xl font-bold text-[#EDA751] my-2">
                     Let&apos;s Connect
                 </h5>
-                <p className="text-[#ADB7BE] mb-4 max-w-md">
+                <p className="text-black mb-4 max-w-md">
                     {" "}
                     I&apos;m currently looking for new opportunities, my inbox is always
                     open. Whether you have a question or just want to say hi, I&apos;ll
                     try my best to get back to you! <br></br>
                     <br />
-                    <span className="text-2xl font-semibold text-white">                    My Email-chistym17@gmail.com
+                    <span className="text-xl font-semibold text-gray-500"> chistym17@gmail.com
                     </span>
                 </p>
-                <div className="socials flex flex-row gap-2">
-                    <Link href="github.com">
-                        <img src={GithubIcon} alt="Github Icon" />
-                    </Link>
-                    <Link href="linkedin.com">
-                        <img src={LinkedinIcon} alt="Linkedin Icon" />
-                    </Link>
+                <div className="flex space-x-4 mt-6">
+                    <a
+                        href="https://www.linkedin.com/in/mynuddin-chisty/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-500 hover:text-blue-700"
+                    >
+                        <FaLinkedin size={30} />
+                    </a>
+                    <a
+                        href="https://github.com/chisty17"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-800 hover:text-gray-900"
+                    >
+                        <FaGithub size={30} />
+                    </a>
+                    <a
+                        href="https://twitter.com/yourprofile"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-400 hover:text-blue-600"
+                    >
+                        <FaTwitter size={30} />
+                    </a>
+                    <a
+                        href="https://www.reddit.com/user/yourprofile"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-orange-600 hover:text-orange-800"
+                    >
+                        <FaReddit size={30} />
+                    </a>
+                    <a
+                        href="https://leetcode.com/yourprofile"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-yellow-500 hover:text-yellow-600"
+                    >
+                        <SiLeetcode size={30} />
+                    </a>
                 </div>
             </div>
             <div>
@@ -71,7 +104,7 @@ const EmailSection = () => {
                                 type="email"
                                 id="email"
                                 required
-                                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                                className=" border border-[#EDA751] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                                 placeholder="YourEmail@gmail.com"
                             />
                         </div>
@@ -87,7 +120,7 @@ const EmailSection = () => {
                                 type="text"
                                 id="subject"
                                 required
-                                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                                className=" border border-[#EDA751] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                                 placeholder="Just saying hi"
                             />
                         </div>
@@ -101,13 +134,13 @@ const EmailSection = () => {
                             <textarea
                                 name="message"
                                 id="message"
-                                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                                className=" border border-[#EDA751] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                                 placeholder="Let's talk about..."
                             />
                         </div>
                         <button
                             type="submit"
-                            className="bg-pink-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+                            className="bg-[#EDA751] text-white font-medium py-2.5 px-5 rounded-lg w-full"
                         >
                             Send Message
                         </button>

@@ -6,7 +6,7 @@ const HeroSection = () => {
       {/* Left Side: Text Content */}
       <div className="w-1/2 space-y-6">
         <motion.h1
-          className="text-5xl font-extrabold text-black"
+          className="text-4xl font-semibold text-black"
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: 'easeOut' }}
@@ -20,7 +20,7 @@ const HeroSection = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5, duration: 1, ease: 'easeOut' }}
         >
-          I am <span className="font-bold text-blue-600">Mynuddin Chisty</span>, a passionate Full Stack Developer specializing in modern web technologies.
+          I am <span className="font-bold text-[#EDA751]">Mynuddin Chisty</span>, a passionate Full Stack Developer specializing in modern web technologies.
         </motion.p>
 
         <motion.div
@@ -33,14 +33,14 @@ const HeroSection = () => {
             <a
               href="/path-to-your-resume.pdf"
               download
-              className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-lg shadow-lg font-semibold flex items-center"
+              className="bg-[#EDA751]  text-white px-6 py-3 rounded-lg shadow-lg font-semibold flex items-center"
             >
               <FaDownload className="mr-2" />
               Download Resume
             </a>
             <a
               href="mailto:your-email@example.com"
-              className="bg-transparent border border-blue-600 hover:bg-blue-600 hover:text-white text-blue-600 px-6 py-3 rounded-lg shadow-lg font-semibold flex items-center"
+              className="bg-transparent border border-[#EDA751]  text-[#EDA751] px-6 py-3 rounded-lg shadow-lg font-semibold flex items-center"
             >
               <FaEnvelope className="mr-2" />
               Send Email
@@ -56,7 +56,7 @@ const HeroSection = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
       >
-        <img src='../../public/images/vecteezy_app-development-concept-with-laptop_11634356.jpg'></img>
+        <img src='../../public/images/vecteezy_working-on-web-and-development-illustration_.jpg'></img>
       </motion.div>
     </div>
   );
