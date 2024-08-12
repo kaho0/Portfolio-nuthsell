@@ -84,7 +84,7 @@ const ProjectsSection = () => {
               initial="initial"
               animate={isInView ? "animate" : "initial"}
               transition={{ duration: 0.3, delay: index * 0.3 }}
-              className="bg-white rounded-lg custom-shadow overflow-hidden border border-gray-200"
+              className="bg-white rounded-lg custom-shadow custom-border overflow-hidden "
             >
               <ProjectCard
                 key={project.id}

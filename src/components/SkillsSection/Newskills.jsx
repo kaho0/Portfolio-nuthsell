@@ -45,7 +45,7 @@ const SkillItem = ({ name, imageUrl }) => (
 );
 
 const SkillSection = ({ title, skillsArray }) => (
-    <div className="mb-8 border border-[#EDA751] rounded-xl  p-4">
+    <div className="mb-8 custom-border rounded-xl  p-4">
         <h3 className="text-xl font-semibold mb-4  text-[#EDA751] text-center " >{title}</h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 gap-3 mt-1 px-10 ">
             {skillsArray.map((skill, index) => (
