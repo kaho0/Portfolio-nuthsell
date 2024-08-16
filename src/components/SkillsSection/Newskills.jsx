@@ -57,7 +57,7 @@ const SkillSection = ({ title, skillsArray }) => (
 
 const SkillsSection = () => {
     return (
-        <section className="bg-white p-10 rounded-lg shadow-lg mt-2">
+        <section className="bg-white p-10 rounded-lg shadow-lg mt-10 mb-10">
             <h2 className="text-3xl font-bold text-[#EDA751] mb-8 text-center">Skills</h2>
             <div className="grid grid-cols-2 gap-4">
                 <SkillSection title="Frontend" skillsArray={skills.frontend} />

@@ -6,10 +6,13 @@ const MyPortfolio = () => {
     type: 'Advanced Digital Wallet Solution',
     techStack: 'Monorepo, Next.js, NextAuth, Express, Postgres, Prisma, Docker, AWS',
     description: [
-      'Engineered a comprehensive digital wallet solution, enabling secure and seamless fund transfers between bank accounts and wallet balances.',
-      'Architected a sophisticated three-tier system comprising a User Application for customer interaction, a Bank Application for transaction management, and a Bank Webhook service for real-time transaction notifications.',
-      'Leveraged CI/CD pipelines to automate deployment processes, ensuring continuous delivery of updates. Dockerized all services for consistent environments, and deployed the entire solution on AWS EC2 instances for scalable and reliable performance.'
+      'Engineered a digital wallet solution for secure fund transfers between bank accounts and wallet balances.',
+      'Architected a three-tier system: User Application for customer interaction, Bank Application for transaction management, and Bank Webhook for real-time notifications.',
+      'Leveraged CI/CD pipelines to automate deployments, Dockerized services for consistency, and deployed on AWS EC2 for scalability and reliability.'
     ],
+    
+    
+    
     githubLink: 'https://github.com/your-repo',
     liveLink: 'https://your-live-site.com',
     images: [

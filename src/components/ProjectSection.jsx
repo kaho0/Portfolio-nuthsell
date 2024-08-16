@@ -12,15 +12,7 @@ const projectsData = [
     gitUrl: "https://github.com/chistym17/TagTalk",
     previewUrl: "https://tagtalk-5e7ed.web.app",
   },
-  {
-    id: 2,
-    title: "YouVid",
-    description: "A Youtube Clone",
-    image: "https://i.ibb.co/sQ80mn8/youvid.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/chistym17/YouVid",
-    previewUrl: "https://polite-semifreddo-b98601.netlify.app",
-  },
+
   {
     id: 3,
     title: "Flavour Fusion",
@@ -50,15 +42,7 @@ const projectsData = [
     previewUrl: "https://mchisty17.pythonanywhere.com",
   },
 
-  {
-    id: 4,
-    title: "My portfolio",
-    description: "Portfolio",
-    image: "https://i.ibb.co/TrdwQ3D/port.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/chistym17/My-Portfolio",
-    previewUrl: "https://my-portfolio-b9aa1.web.app",
-  },
+
 ];
 
 const ProjectsSection = () => {
