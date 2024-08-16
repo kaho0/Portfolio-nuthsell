@@ -19,7 +19,7 @@ const Main = () => {
       <div className='pt-5 pb-5 mb-10'>
         <Outlet />
       </div>
-      <ZoomIn><AboutSection></AboutSection></ZoomIn>
+      <AboutSection></AboutSection>
       {/* <SkillsSection></SkillsSection> */}
       {/* <Skills></Skills> */}
         {/* <Secondproject></Secondproject> */}
