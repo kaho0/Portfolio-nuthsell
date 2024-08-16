@@ -56,7 +56,7 @@ const HeroSection = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
       >
-        <img src='../../public/images/vecteezy_working-on-web-and-development-illustration_.jpg'></img>
+        <img src='images/vecteezy_working-on-web-and-development-illustration_.jpg'></img>
       </motion.div>
     </div>
   );

@@ -1,8 +1,8 @@
 
 const skills = {
     frontend: [
-        { name: 'NextJs', imageUrl: '../../../public/images/4a2be73b1e2efb44355436c40bf496dd.jpg' },
-        { name: 'TypeScript', imageUrl: '../../../public/skills/typescript.png' },
+        { name: 'NextJs', imageUrl: 'images/4a2be73b1e2efb44355436c40bf496dd.jpg' },
+        { name: 'TypeScript', imageUrl: 'skills/typescript.png' },
         { name: 'React', imageUrl: 'https://i.ibb.co/2MxNtz7/icons8-react-native-48.png' },
         { name: 'JavaScript', imageUrl: 'https://i.ibb.co/d6WyDs9/icons8-javascript-48.png' },
         { name: 'HTML', imageUrl: 'https://i.ibb.co/XDzRMhB/icons8-html-48.png' },
@@ -11,29 +11,29 @@ const skills = {
     backend: [
         { name: 'Python', imageUrl: 'https://i.ibb.co/ng4sbZF/python-5968350.png' },
         { name: 'Django', imageUrl: 'https://i.ibb.co/1Jz1V0p/icons8-django-a-high-level-python-web-framework-that-encourages-rapid-development-48.png' },
-        { name: 'Django Rest', imageUrl: '../../../public/skills/Django REST.png' },
+        { name: 'Django Rest', imageUrl: 'skills/Django REST.png' },
         { name: 'Node.js', imageUrl: 'https://i.ibb.co/DtZr2j2/icons8-nodejs-48.png' },
-        { name: 'Express.js', imageUrl: '../../../public/skills/icons8-express-js-50.png' },
-        { name: 'NextAuth', imageUrl: '../../../public/skills/download.jpeg' },
+        { name: 'Express.js', imageUrl: 'skills/icons8-express-js-50.png' },
+        { name: 'NextAuth', imageUrl: 'skills/download.jpeg' },
     ],
     databases: [
         { name: 'MySQL', imageUrl: 'https://i.ibb.co/HNWhJ1q/icons8-mysql-48.png' },
         { name: 'MongoDB', imageUrl: 'https://i.ibb.co/sCd8yM9/icons8-mongodb-a-cross-platform-document-oriented-database-program-48.png' },
-        { name: 'PostgreSQL', imageUrl: '../../../public/skills/elephant.png' },
-        { name: 'Prisma', imageUrl: '../../../public/skills/icons8-prisma-orm-48.png' },
+        { name: 'PostgreSQL', imageUrl: 'skills/elephant.png' },
+        { name: 'Prisma', imageUrl: 'skills/icons8-prisma-orm-48.png' },
     ],
     deployment: [
-        { name: 'Docker', imageUrl: '../../../public/skills/docker.png' },
-        { name: 'AWS', imageUrl: '../../../public/skills/icons8-aws-logo-48.png' },
-        { name: 'CI/CD', imageUrl: '../../../public/skills/ci-cd-svgrepo-com (1).svg' },
-        { name: 'WebRTC', imageUrl: '../../../public/skills/webrtc.png' },
-        { name: 'WebSocket', imageUrl: '../../../public/skills/websocket.png' },
+        { name: 'Docker', imageUrl: 'skills/docker.png' },
+        { name: 'AWS', imageUrl: 'skills/icons8-aws-logo-48.png' },
+        { name: 'CI/CD', imageUrl: 'skills/ci-cd-svgrepo-com (1).svg' },
+        { name: 'WebRTC', imageUrl: 'skills/webrtc.png' },
+        { name: 'WebSocket', imageUrl: 'skills/websocket.png' },
     ],
     Languages: [
         { name: 'C', imageUrl: 'https://i.ibb.co/sJDVdZ9/icons8-c-48-1.png' },
         { name: 'C++', imageUrl: 'https://i.ibb.co/1TQFwMn/icons8-c-48.png' },
         { name: 'Python', imageUrl: 'https://i.ibb.co/ng4sbZF/python-5968350.png' },
-        { name: 'Rust', imageUrl: '../../../public/images/images.png' },
+        { name: 'Rust', imageUrl: 'images/images.png' },
     ]
 };
 

@@ -3,10 +3,10 @@ import { FaLinkedin, FaGithub, FaTwitter, FaReddit } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
 const AboutSection = () => {
   return (
-    <section className="bg-white rounded-2xl h-auto mt-[50px] px-16" id="about">
+    <section className="bg-white rounded-2xl h-auto mt-[20px] px-16" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-2 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <img
-          src="../../public/images/vecteezy_code-hacker-vector-icon-design_21261938.jpg"
+          src="images/vecteezy_code-hacker-vector-icon-design_21261938.jpg"
           width={320}
           height={300}
           alt="Mynuddin Chisty"

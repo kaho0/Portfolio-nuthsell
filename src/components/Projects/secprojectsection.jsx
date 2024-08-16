@@ -1,9 +1,9 @@
 // eslint-disable-next-line react/prop-types
 const ProjectSection = ({ name, type, techStack, description, githubLink, liveLink, images }) => {
     return (
-        <div className="flex flex-col md:flex-row  bg-white p-6 mb-6 rounded-lg shadow-lg">
+        <div className="flex flex-col md:flex-row-reverse  bg-white p-6 mb-6 rounded-lg shadow-lg">
             {/* Left Side: Project Description */}
-            <div className="w-full md:w-[60%] mb-4 md:mb-0">
+            <div className="w-full md:w-[60%] ml-10 mb-4 md:mb-0">
                 {/* Project Name and Links */}
                 <div className="flex justify-between items-center mb-6">
                     <h2 className="text-3xl font-bold text-[#EDA751]">{name}</h2>
@@ -24,7 +24,7 @@ const ProjectSection = ({ name, type, techStack, description, githubLink, liveLi
                     ))}
                 </ul>
 
-                <div className="flex space-x-6 mt-10">
+                <div className="flex space-x-6 mt-10 ">
                     <a
                         href={githubLink}
                         target="_blank"
@@ -46,7 +46,7 @@ const ProjectSection = ({ name, type, techStack, description, githubLink, liveLi
 
 
             {/* Right Side: Photo Collage */}
-            <div className="w-full md:w-[40%] ml flex flex-col justify-between">
+            <div className="w-full md:w-[40%] flex flex-col justify-between">
                 <div className="flex space-x-2 mb-2">
                     <div className="w-1/2 p-1">
                         <img

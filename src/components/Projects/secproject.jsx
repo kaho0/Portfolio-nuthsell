@@ -14,15 +14,15 @@ const Secondproject = () => {
         githubLink: 'https://github.com/your-repo',
         liveLink: 'https://your-live-site.com',
         images: [
-          '../../../public/images/pay1.png',
-          '../../../public/images/pay2.png',
-          '../../../public/images/pay3.png'
+          'images/pay1.png',
+          'images/pay2.png',
+          'images/pay3.png'
         ]
       };
     
 
   return (
-    <div className="container mx-auto mt-2">
+    <div className="container mx-auto mt-[20px]">
       <ProjectSection
         name={project.name}
         type={project.type}
