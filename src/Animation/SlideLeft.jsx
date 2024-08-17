@@ -1,39 +1,65 @@
 import React, { useState, useEffect, useRef } from 'react';
+import PropTypes from 'prop-types';
 
-const SlideInFromLeft = ({ children }) => {
-    const ref = useRef(null);
-    const [isVisible, setIsVisible] = useState(false);
+const SlideInFromLeft = ({ children, duration = 1000 }) => {
+  const [shouldAnimate, setShouldAnimate] = useState(false);
+  const elementRef = useRef(null);
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                const entry = entries[0];
-                setIsVisible(entry.isIntersecting);
-            },
-            { threshold: 0.1 }
-        );
-
-        if (ref.current) {
-            observer.observe(ref.current);
-        }
-
-        return () => {
-            if (ref.current) {
-                observer.unobserve(ref.current);
-            }
-        };
-    }, []);
-
-    return (
-        <div
-            ref={ref}
-            className={`transition-transform duration-500 ease-in-out ${
-                isVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
-            }`}
-        >
-            {children}
-        </div>
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setShouldAnimate(true);
+          } else {
+            setShouldAnimate(false);
+          }
+        });
+      },
+      { threshold: 0.1 } // Adjust threshold if needed
     );
+
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
+    }
+
+    return () => {
+      if (elementRef.current) {
+        observer.unobserve(elementRef.current);
+      }
+    };
+  }, []);
+
+  return (
+    <div
+      ref={elementRef}
+      style={{
+        overflow: 'hidden',
+        position: 'relative',
+        width: '100%',
+        height: '100%', // Ensure height is sufficient
+      }}
+    >
+      <div
+        style={{
+          transition: `transform ${duration}ms ease-in-out`,
+          transform: shouldAnimate ? 'translateX(0)' : 'translateX(-100%)',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+        }}
+      >
+        {children}
+      </div>
+    </div>
+  );
+};
+
+SlideInFromLeft.propTypes = {
+  children: PropTypes.node.isRequired,
+  duration: PropTypes.number,
 };
 
 export default SlideInFromLeft;

@@ -12,6 +12,7 @@ import Secondproject from '../components/Projects/secproject'
 import SlideInFromLeft from '../Animation/SlideLeft'
 import YouVidProject from '../components/Projects/Thirdproject'
 import MyProjectsButton from '../components/Projects/projectbtn'
+import SlideInFromRight from '../Animation/SlideRight'
 const Main = () => {
   return (
     <div className='px-16  '>
@@ -22,10 +23,27 @@ const Main = () => {
       <AboutSection></AboutSection>
       {/* <SkillsSection></SkillsSection> */}
       {/* <Skills></Skills> */}
-        {/* <Secondproject></Secondproject> */}
+      {/* <Secondproject></Secondproject> */}
       <MyProjectsButton></MyProjectsButton>
-      <MyPortfolio></MyPortfolio>
+      <div className='h-[500px]'>
+
+        <SlideInFromLeft>
+          <MyPortfolio></MyPortfolio>
+
+        </SlideInFromLeft>
+
+
+      </div>
+      <div className='h-[500px]'>
+
+      <SlideInFromRight>
       <YouVidProject></YouVidProject>
+
+      </SlideInFromRight>
+       
+
+
+      </div>
       <ViewAllProjectsButton></ViewAllProjectsButton>
       {/* <ProjectsSection></ProjectsSection> */}
       <SkillsSection></SkillsSection>

@@ -1,11 +1,12 @@
 
-import { useState } from "react";
 import axios from "axios";
 import { FaLinkedin, FaGithub, FaTwitter, FaReddit } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const EmailSection = () => {
-    const [emailSubmitted, setEmailSubmitted] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -14,14 +15,27 @@ const EmailSection = () => {
             subject: e.target.subject.value,
             message: e.target.message.value,
         };
-        axios.post('https://portfolio-web-ji8e.onrender.com/sendemail', data).then(res => {
-
-            console.log(res.data);
-            setEmailSubmitted(true)
-
-        })
-
+        
+        try {
+            toast("sending email....")
+            const res = await axios.post('https://portfolio-web-ji8e.onrender.com/sendemail', data);
+            console.log(res)
+            if (res.status === 200) {
+                toast.success('Email sent successfully!');
+            }
+        } catch (error) {
+            toast.error('Failed to send email. Please try again.', {
+                position: "bottom-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        }
     };
+    
 
     return (
         <section
@@ -86,16 +100,12 @@ const EmailSection = () => {
                 </div>
             </div>
             <div>
-                {emailSubmitted ? (
-                    <p className="text-green-500 text-sm mt-2">
-                        Email sent successfully!
-                    </p>
-                ) : (
+                
                     <form className="flex flex-col" onSubmit={handleSubmit}>
                         <div className="mb-6">
                             <label
                                 htmlFor="email"
-                                className="text-white block mb-2 text-sm font-medium"
+                                className="text-black block mb-2 text-sm font-medium"
                             >
                                 Your email
                             </label>
@@ -104,14 +114,14 @@ const EmailSection = () => {
                                 type="email"
                                 id="email"
                                 required
-                                className=" border border-[#EDA751] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                                className=" border border-[#EDA751] placeholder-[#9CA2A9] text-black text-sm rounded-lg block w-full p-2.5"
                                 placeholder="YourEmail@gmail.com"
                             />
                         </div>
                         <div className="mb-6">
                             <label
                                 htmlFor="subject"
-                                className="text-white block text-sm mb-2 font-medium"
+                                className="text-black block text-sm mb-2 font-medium"
                             >
                                 Subject
                             </label>
@@ -120,21 +130,21 @@ const EmailSection = () => {
                                 type="text"
                                 id="subject"
                                 required
-                                className=" border border-[#EDA751] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                                className=" border border-[#EDA751] placeholder-[#9CA2A9] text-black text-sm rounded-lg block w-full p-2.5"
                                 placeholder="Just saying hi"
                             />
                         </div>
                         <div className="mb-6">
                             <label
                                 htmlFor="message"
-                                className="text-white block text-sm mb-2 font-medium"
+                                className="text-black block text-sm mb-2 font-medium"
                             >
                                 Message
                             </label>
                             <textarea
                                 name="message"
                                 id="message"
-                                className=" border border-[#EDA751] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                                className=" border border-[#EDA751] placeholder-[#9CA2A9] text-black text-sm rounded-lg block w-full p-2.5"
                                 placeholder="Let's talk about..."
                             />
                         </div>
@@ -145,7 +155,7 @@ const EmailSection = () => {
                             Send Message
                         </button>
                     </form>
-                )}
+                
             </div>
         </section>
     );

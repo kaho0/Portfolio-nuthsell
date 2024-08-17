@@ -29,7 +29,7 @@ const AboutSection = () => {
           {/* Social Media Links */}
           <div className="flex space-x-4 mt-4">
             <a
-              href="https://www.linkedin.com/in/mynuddin-chisty/"
+              href="https://www.linkedin.com/in/mynuddin-chisty17/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-700"
@@ -37,7 +37,7 @@ const AboutSection = () => {
               <FaLinkedin size={30} />
             </a>
             <a
-              href="https://github.com/chisty17"
+              href="https://github.com/chistym17"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-800 hover:text-gray-900"
@@ -61,7 +61,7 @@ const AboutSection = () => {
               <FaReddit size={30} />
             </a>
             <a
-              href="https://leetcode.com/yourprofile"
+              href="https://leetcode.com/u/chistym17/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-yellow-500 hover:text-yellow-600"
