@@ -1,5 +1,5 @@
 import ProjectSection from './seconddiv';
-
+//paytm project
 const MyPortfolio = () => {
   const project = {
     name: 'PayLink - Secure Wallet App',
@@ -23,7 +23,7 @@ const MyPortfolio = () => {
   };
   
   return (
-    <div className="container mx-auto mt-2">
+    <div className="md:container mx-auto mt-2">
       <ProjectSection
         name={project.name}
         type={project.type}

@@ -1,9 +1,9 @@
 // eslint-disable-next-line react/prop-types
 const ProjectSection = ({ name, type, techStack, description, githubLink, liveLink, images }) => {
     return (
-        <div className="flex flex-col md:flex-row-reverse  bg-white p-6 mb-6 rounded-lg shadow-lg">
-            {/* Left Side: Project Description */}
-            <div className="w-full md:w-[60%] ml-10 mb-4 md:mb-0">
+        <div className="flex flex-col md:flex-row-reverse bg-white p-6 mb-6 rounded-lg shadow-lg">
+            {/* Right Side: Project Description */}
+            <div className="md:w-[60%] w-full mb-4 md:mb-0 md:ml-10">
                 {/* Project Name and Links */}
                 <div className="flex justify-between items-center mb-6">
                     <h2 className="text-3xl font-bold text-[#EDA751]">{name}</h2>
@@ -24,7 +24,7 @@ const ProjectSection = ({ name, type, techStack, description, githubLink, liveLi
                     ))}
                 </ul>
 
-                <div className="flex space-x-6 mt-10 ">
+                <div className="flex space-x-4 mt-10 ml-6 md:ml-0">
                     <a
                         href={githubLink}
                         target="_blank"
@@ -44,37 +44,46 @@ const ProjectSection = ({ name, type, techStack, description, githubLink, liveLi
                 </div>
             </div>
 
+            {/* Left Side: Photo Section */}
+            <div className="md:w-[40%] w-full flex flex-col justify-between mb-4 md:mb-0">
+                {/* Single Image on Small Devices */}
+                <div className="sm:hidden w-full p-1">
+                    <img
+                        src={images[0]}
+                        alt="Project Image"
+                        className="rounded-lg object-cover w-full h-52 border-4"
+                        style={{ borderColor: '#EDA751' }}
+                    />
+                </div>
 
-            {/* Right Side: Photo Collage */}
-            <div className="w-full md:w-[40%] flex flex-col justify-between">
-                <div className="flex space-x-2 mb-2">
-                    <div className="w-1/2 p-1">
+                {/* Collage on Medium to Large Devices */}
+                <div className="hidden sm:flex flex-col sm:flex-row space-x-0 sm:space-x-2 mb-2">
+                    <div className="w-full sm:w-1/2 p-1">
                         <img
                             src={images[0]}
-                            alt={`Project Image 1`}
-                            className="rounded-lg object-cover w-full h-full border-4"
+                            alt="Project Image 1"
+                            className="rounded-lg object-cover w-full h-40 border-4"
                             style={{ borderColor: '#EDA751' }}
                         />
                     </div>
-                    <div className="w-1/2 p-1">
+                    <div className="w-full sm:w-1/2 p-1">
                         <img
                             src={images[1]}
-                            alt={`Project Image 2`}
-                            className="rounded-lg object-cover w-full h-full border-4 "
+                            alt="Project Image 2"
+                            className="rounded-lg object-cover w-full h-40 border-4"
                             style={{ borderColor: '#EDA751' }}
                         />
                     </div>
                 </div>
-                <div className="w-full p-1">
+                <div className="hidden sm:flex w-full p-1">
                     <img
                         src={images[2]}
-                        alt={`Project Image 3`}
-                        className="rounded-lg object-cover w-full h-full border-4"
+                        alt="Project Image 3"
+                        className="rounded-lg object-cover w-full h-60 border-4"
                         style={{ borderColor: '#EDA751' }}
                     />
                 </div>
             </div>
-
         </div>
     );
 };

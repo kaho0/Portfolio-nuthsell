@@ -25,7 +25,7 @@ const Main = () => {
       {/* <Skills></Skills> */}
       {/* <Secondproject></Secondproject> */}
       <MyProjectsButton></MyProjectsButton>
-      <div className='h-[500px]'>
+      <div className='h-[900px] md:h-[500px]'>
 
         <SlideInFromLeft>
           <MyPortfolio></MyPortfolio>
@@ -34,12 +34,12 @@ const Main = () => {
 
 
       </div>
-      <div className='h-[500px]'>
+      <div className='h-[1000px] md:h-[600px]'>
 
-      <SlideInFromRight>
+      {/* <SlideInFromRight> */}
       <YouVidProject></YouVidProject>
 
-      </SlideInFromRight>
+      {/* </SlideInFromRight> */}
        
 
 

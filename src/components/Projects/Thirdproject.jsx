@@ -22,7 +22,7 @@ const YouVidProject = () => {
       };
 
     return (
-      <div className="container mx-auto mt-[20px] ">
+      <div className="md:container mx-auto mt-[20px] ">
      
 
         {/* Description Section */}
