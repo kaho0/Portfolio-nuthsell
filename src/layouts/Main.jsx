@@ -15,7 +15,7 @@ import MyProjectsButton from '../components/Projects/projectbtn'
 import SlideInFromRight from '../Animation/SlideRight'
 const Main = () => {
   return (
-    <div className='px-16  '>
+    <div className='px-3 md:px-16  '>
       {/* <Navbar></Navbar> */}
       <div className='pt-5 pb-5 mb-10'>
         <Outlet />
