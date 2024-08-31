@@ -2,22 +2,22 @@ const skills = {
     frontend: [
       { name: 'NextJs', imageUrl: 'images/4a2be73b1e2efb44355436c40bf496dd.jpg' },
       { name: 'TypeScript', imageUrl: 'skills/typescript.png' },
-      { name: 'React', imageUrl: 'https://i.ibb.co/2MxNtz7/icons8-react-native-48.png' },
-      { name: 'JavaScript', imageUrl: 'https://i.ibb.co/d6WyDs9/icons8-javascript-48.png' },
-      { name: 'HTML', imageUrl: 'https://i.ibb.co/XDzRMhB/icons8-html-48.png' },
-      { name: 'CSS', imageUrl: 'https://i.ibb.co/p01gJtt/icons8-css-48.png' },
+      { name: 'React', imageUrl: 'skills/1174949_js_react js_logo_react_react native_icon.png' },
+      { name: 'JavaScript', imageUrl: 'skills/652581_code_command_develop_javascript_language_icon.png' },
+      { name: 'HTML', imageUrl: 'skills/317755_badge_html_html5_achievement_award_icon.png' },
+      { name: 'CSS', imageUrl: 'skills/317756_badge_css_css3_achievement_award_icon.png' },
     ],
     backend: [
-      { name: 'Python', imageUrl: 'https://i.ibb.co/ng4sbZF/python-5968350.png' },
-      { name: 'Django', imageUrl: 'https://i.ibb.co/1Jz1V0p/icons8-django-a-high-level-python-web-framework-that-encourages-rapid-development-48.png' },
+      { name: 'Python', imageUrl: 'skills/4375050_logo_python_icon.png' },
+      { name: 'Django', imageUrl: 'skills/9118014_django_fill_icon.png' },
       { name: 'Django Rest', imageUrl: 'skills/Django REST.png' },
-      { name: 'Node.js', imageUrl: 'https://i.ibb.co/DtZr2j2/icons8-nodejs-48.png' },
+      { name: 'Node.js', imageUrl: 'skills/1012818_code_development_logo_nodejs_icon.png'},
       { name: 'Express.js', imageUrl: 'skills/icons8-express-js-50.png' },
       { name: 'NextAuth', imageUrl: 'skills/download.jpeg' },
     ],
     databases: [
-      { name: 'MySQL', imageUrl: 'https://i.ibb.co/HNWhJ1q/icons8-mysql-48.png' },
-      { name: 'MongoDB', imageUrl: 'https://i.ibb.co/sCd8yM9/icons8-mongodb-a-cross-platform-document-oriented-database-program-48.png' },
+      { name: 'MySQL', imageUrl: 'skills/1012821_code_development_logo_mysql_icon.png' },
+      { name: 'MongoDB', imageUrl: 'skills/1012822_code_development_logo_mongodb_programming_icon.png' },
       { name: 'PostgreSQL', imageUrl: 'skills/elephant.png' },
       { name: 'Prisma', imageUrl: 'skills/icons8-prisma-orm-48.png' },
     ],
@@ -30,8 +30,8 @@ const skills = {
     ],
     languages: [
       { name: 'C', imageUrl: 'https://i.ibb.co/sJDVdZ9/icons8-c-48-1.png' },
-      { name: 'C++', imageUrl: 'https://i.ibb.co/1TQFwMn/icons8-c-48.png' },
-      { name: 'Python', imageUrl: 'https://i.ibb.co/ng4sbZF/python-5968350.png' },
+      { name: 'C++', imageUrl: 'skills/7564189_c_logo_plus plus_plus_+ +_icon.png' },
+      { name: 'Python', imageUrl: 'skills/4375050_logo_python_icon.png' },
       { name: 'Rust', imageUrl: 'images/images.png' },
     ]
   };
